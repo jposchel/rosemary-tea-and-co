@@ -1,5 +1,7 @@
 /* -------------------- Basic Styles: Tags -------------------- */
 
+@import url(https://fonts.googleapis.com/css?family=Domine:400,700);
+
 html, body {
 	width: 100%;
 	margin: 0px;
@@ -41,7 +43,9 @@ h1, h2, h3, h4, h5, h6, p {
 	margin: 0px;
 	padding: 5px;
 	color: #404040;
-	font-family: Arial, Sans-Serif;
+	/*font-family: Arial, Sans-Serif;*/
+	font-family: 'Domine', serif;
+	font-weight: 700;
 	font-weight: normal;
 }
 
@@ -52,7 +56,9 @@ h1 {
 p {
 	border: 0px;
 	display: inline-block;
-	font-family: Arial, Sans-Serif;
+	/*font-family: Arial, Sans-Serif;*/
+	font-family: 'Domine', serif;
+	font-weight: 400;
 	font-size: 14px;
 }
 
@@ -61,8 +67,10 @@ a {
 	padding: 0px;
 	display: inline-block;
 	text-decoration: none;
-	color: #00cc00;
-	font-family: Arial, Sans-Serif;
+	color: #603913;
+	/*font-family: Arial, Sans-Serif;*/
+	font-family: 'Domine', serif;
+	font-weight: 700;
 	font-weight: normal;
 }
 
@@ -81,7 +89,7 @@ li {
 /* -------------------- Basic Styles: Classes -------------------- */
 
 div.main-content {
-	max-width: 700px;
+	max-width: 1500px;
 	padding: 50px 50px;
 	margin: 0 auto;
 }
@@ -143,8 +151,8 @@ a.button.logo-home-main {
 }
 
 a.button.logo-home-main img.button.logo-home-main {
-	width: 50px;
-	height: 50px;
+	width: 100px;
+	height: 100px;
 }
 
 header div.main-content {
@@ -155,6 +163,12 @@ header nav.main-site-nav {
 	position: absolute;
 	right: 50px;
 	top: 60px;
+}
+
+.section-header {
+	height: 1000px;
+	background: url("../img/bowl-336538.jpg") no-repeat center bottom;
+	background-size: cover;
 }
 /* --- END Sitewide Styles: Header --- */
 
