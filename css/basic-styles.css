@@ -110,7 +110,7 @@ nav.nav-vertical ul li {
 
 nav.nav-horizontal ul li {
 	display: inline-block;
-	margin: 0px 10px 0px 10px; /* top | right | bottom | left */
+	margin: 7px; /* top | right | bottom | left */
 	width: auto;
 }
 
@@ -145,8 +145,8 @@ img.button {
 /* -------------------- Sitewide Styles: Header -------------------- */
 
 a.button.logo-home-main {
-	width: 50px;
-	height: 50px;
+	width: 100px;
+	height: 100px;
 	margin-bottom: 10px;
 }
 
@@ -163,6 +163,10 @@ header nav.main-site-nav {
 	position: absolute;
 	right: 50px;
 	top: 60px;
+}
+
+img.home-lettermark-main {
+	margin-top: 0.5%;
 }
 
 .section-header {
@@ -184,11 +188,40 @@ a.button-small {
 
 /* -------------------- Sitewide Styles: Media Queries -------------------- */
 
-@media (max-width: 500px) {
+@media (max-width: 1500px) {
+	img.home-lettermark-main {
+		margin-top: 7%;
+	}
+}
+
+@media (max-width: 1200px) {
+	img.home-lettermark-main {
+		margin-top: 20%;
+	}
+}
+
+@media (max-width: 900px) {
+	img.home-lettermark-main {
+		margin-top: 30%;
+	}
+}
+
+@media (max-width: 700px) {
+	img.home-lettermark-main {
+		margin-top: 50%;
+	}
+}
+
+@media (max-width: 650px) {
+	a.button.logo-home-main {
+		display: block;
+		margin: 0 auto;
+	}
+
 	header nav.main-site-nav {
 		position: static;
 		display: block;
-		margin: 20px 0px 0px 0px;
+		margin: 30px 0px 0px 0px;
 		text-align: center;
 	}
 
@@ -196,5 +229,15 @@ a.button-small {
 		display: block;
 		margin: 7px;
 		width: 100px;
+	}
+
+	img.home-lettermark-main {
+		margin-top: 50%;
+	}
+}
+
+@media (max-width: 500px) {
+	img.home-lettermark-main {
+		margin-top: 70%;
 	}
 }
