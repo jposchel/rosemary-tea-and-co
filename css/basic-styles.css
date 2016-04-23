@@ -102,6 +102,58 @@ div.content-wrapper {
 	text-align: center;
 }
 
+.grid-wrapper {
+	position: relative;
+	width: 100%;
+}
+
+div.col-wrapper {
+	position: relative;
+	width: 100%;
+}
+
+.col-1-of-4 {
+	position: absolute;
+	display: inline-block;
+	width: 25.0000000000%;
+	bottom: flex;
+}
+
+.col-3-of-4 {
+	position: absolute;
+	display: inline-block;
+	width: 75.0000000000%;
+	bottom: flex;
+}
+
+.col-1-of-3 {
+	position: absolute;
+	display: inline-block;
+	width: 33.3333333333%;
+	bottom: flex;
+}
+
+.col-2-of-3 {
+	position: absolute;
+	display: inline-block;
+	width: 66.6666666666%;
+	bottom: flex;
+}
+
+.col-2 {
+	position: absolute;
+	display: inline-block;
+	width: 50.0000000000%;
+	bottom: flex;
+}
+
+.col-1 {
+	position: absolute;
+	display: inline-block;
+	width: 100.0000000000%;
+	bottom: flex;
+}
+
 nav.nav-vertical ul li {
 	display: block;
 	margin: 7px;
@@ -115,8 +167,14 @@ nav.nav-horizontal ul li {
 }
 
 p.body-copy {
-	font-size: 14px;
-	line-height: 21px;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+a.call-to-action {
+	font-size: 22px;
+	text-decoration: underline;
+	color: #603913;
 }
 
 a.button-action {
@@ -181,6 +239,35 @@ img.home-lettermark-main {
 a.button-small {
 	margin: 50px;
 }
+
+section.features-1 {
+
+}
+
+section.features-1 div.col-wrapper:nth-child(1) {
+	height: 500px;
+}
+
+section.features-1 div.col-wrapper div:nth-child(1) {
+	top: 0;
+	left: 0;
+	height: 500px;
+	background: url(../img/home-feature-img-1.png) no-repeat center;
+	background-size: cover;
+}
+
+section.features-1 div.col-wrapper div:nth-child(2) {
+	top: 0;
+	right: 0;
+	height: 500px;
+	text-align: center;
+}
+
+section.features-1 div.col-wrapper div:nth-child(2) p {
+	display: block;
+	width: 60%;
+	margin: 12% auto 5% auto;
+}
 /* --- END Sitewide Styles: Content --- */
 
 /* -------------------- Sitewide Styles: Footer -------------------- */
@@ -206,9 +293,33 @@ a.button-small {
 	}
 }
 
-@media (max-width: 700px) {
+@media (max-width: 700px) { /*----------------------------------------*/
+	.col-1-at-700px {
+		position: absolute;
+		display: inline-block;
+		width: 100.0000000000%;
+		bottom: flex;
+	}
+
 	img.home-lettermark-main {
 		margin-top: 50%;
+	}
+
+	section.features-1 div.col-wrapper div:nth-child(1), section.features-1 div.col-wrapper div:nth-child(2), section.features-1 div.col-wrapper:nth-child(1) {
+		height: 600px;
+	}
+
+	section.features-1 div.col-wrapper div:nth-child(2) p.body-copy {
+		margin: 30% auto 5% auto;
+		font-size: 14px;
+		line-height: 28px;
+		color: #ffffff;
+	}
+
+	section.features-1 div.col-wrapper div:nth-child(2) a.call-to-action {
+		font-size: 18px;
+		text-decoration: underline;
+		color: #ffffff;
 	}
 }
 
