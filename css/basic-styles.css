@@ -252,7 +252,7 @@ section.features-1 div.col-wrapper div:nth-child(1) {
 	top: 0;
 	left: 0;
 	height: 500px;
-	background: url(../img/home-feature-img-1.png) no-repeat center;
+	background: url("../img/home-feature-img-1.png") no-repeat center;
 	background-size: cover;
 }
 
@@ -295,8 +295,26 @@ section.features-2 div.col-wrapper div:nth-child(2) {
 	top: 0;
 	right: 0;
 	height: 500px;
-	background: url(../img/home-feature-img-2.png) no-repeat center;
+	background: url("../img/home-feature-img-2.png") no-repeat center;
 	background-size: cover;
+}
+
+.section-social {
+	height: 1000px;
+	background: url("../img/home-social-img.png") no-repeat center top;
+	background-size: cover;
+	text-align: center;
+}
+
+.section-social div.main-content h1.x-large-headline {
+	margin: 20px 0 0 0;
+	color: #ffffff;
+}
+
+.section-social div.main-content a.social-icon-large, .section-social div.main-content a.social-icon-large img {
+	width: 70px;
+	height: 70px;
+	margin: 20px 10px 20px 10px;
 }
 /* --- END Sitewide Styles: Content --- */
 
@@ -373,6 +391,10 @@ section.features-2 div.col-wrapper div:nth-child(2) {
 
 	section.features-2 div.col-wrapper div:nth-child(2) {
 		z-index: -1;
+	}
+
+	.section-social div.main-content h1.x-large-headline {
+		font-size: 30px;
 	}
 }
 
