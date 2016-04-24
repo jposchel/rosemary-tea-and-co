@@ -36,7 +36,7 @@ header {
 footer {
 	margin: 0px auto;
 	padding: 0px;
-	background-color: #b3ffb3;
+	background-color: #f2c082;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -319,6 +319,22 @@ section.features-2 div.col-wrapper div:nth-child(2) {
 /* --- END Sitewide Styles: Content --- */
 
 /* -------------------- Sitewide Styles: Footer -------------------- */
+
+footer div.main-content {
+	text-align: center;
+}
+
+p.copyright {
+	float: left;
+}
+
+footer div.main-content a.logo-home-main {
+	margin: 10px;
+}
+
+nav.footer-site-nav {
+	float: right;
+}
 /* --- END Sitewide Styles: Footer --- */
 
 /* -------------------- Sitewide Styles: Media Queries -------------------- */
@@ -339,9 +355,23 @@ section.features-2 div.col-wrapper div:nth-child(2) {
 	img.home-lettermark-main {
 		margin-top: 30%;
 	}
+
+	footer div.main-content {
+		/*clear: both;*/
+	}
+
+	p.copyright {
+		display: block;
+		float: none;
+	}
+
+	nav.footer-site-nav {
+		display: block;
+		float: none;
+	}
 }
 
-@media (max-width: 700px) { /*----------------------------------------*/
+@media (max-width: 700px) {
 	.col-1-at-700px {
 		position: absolute;
 		display: inline-block;
@@ -419,6 +449,10 @@ section.features-2 div.col-wrapper div:nth-child(2) {
 
 	img.home-lettermark-main {
 		margin-top: 50%;
+	}
+
+	footer div.main-content a.button.logo-home-main {
+		display: inline-block;
 	}
 }
 
