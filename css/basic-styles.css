@@ -305,58 +305,9 @@ nav.footer-site-nav {
 	img.home-lettermark-main {
 		margin-top: 50%;
 	}
-
-	section.features-1 div.col-wrapper div:nth-child(1), section.features-1 div.col-wrapper div:nth-child(2), section.features-1 div.col-wrapper:nth-child(1) {
-		height: 600px;
-	}
-
-	section.features-1 div.col-wrapper div:nth-child(2) p.body-copy {
-		margin: 30% auto 5% auto;
-		font-size: 14px;
-		line-height: 28px;
-		color: #ffffff;
-	}
-
-	section.features-1 div.col-wrapper div:nth-child(2) a.call-to-action {
-		font-size: 18px;
-		color: #ffffff;
-	}
-
-	section.features-2 div.col-wrapper div:nth-child(1), section.features-2 div.col-wrapper div:nth-child(2), section.features-2 div.col-wrapper:nth-child(1) {
-		height: 600px;
-	}
-
-	section.features-2 div.col-wrapper div:nth-child(1) {
-		background-color: rgba(255, 255, 255, 0.0);
-	}
-
-	section.features-2 div.col-wrapper div:nth-child(1) p.body-copy {
-		margin: 20px auto 180px auto;
-		font-size: 14px;
-		line-height: 28px;
-		color: #ffffff;
-	}
-
-	section.features-2 div.col-wrapper div:nth-child(1) a.call-to-action {
-		font-size: 18px;
-		color: #ffffff;
-	}
-
-	section.features-2 div.col-wrapper div:nth-child(2) {
-		z-index: -1;
-	}
-
-	.section-social div.main-content h1.x-large-headline {
-		font-size: 30px;
-	}
 }
 
 @media (max-width: 650px) {
-	a.button.logo-home-main {
-		display: block;
-		margin: 0 auto;
-	}
-
 	header nav.main-site-nav {
 		position: static;
 		display: block;
@@ -370,17 +321,11 @@ nav.footer-site-nav {
 		width: 100px;
 	}
 
-	img.home-lettermark-main {
-		margin-top: 50%;
-	}
-
 	footer div.main-content a.button.logo-home-main {
 		display: inline-block;
 	}
 }
 
 @media (max-width: 500px) {
-	img.home-lettermark-main {
-		margin-top: 70%;
-	}
+
 }
